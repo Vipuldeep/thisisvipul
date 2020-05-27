@@ -1,0 +1,336 @@
+@import './resets';
+@import './variables';
+
+html {
+   font-size: 62.5%;
+   -webkit-font-smoothing: antialiased;
+ }
+ 
+ body {
+   background-color: $text-color;
+   font-family: $font-type;
+   font-weight: normal;
+   font-size: 15px;
+   line-height: 30px;
+   color: $primary-color;
+   -webkit-font-smoothing: antialiased;
+   /* Fix for webkit rendering */
+   -webkit-text-size-adjust: 100%;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   color: $accent-color;
+   font-family: $font-type;
+   font-weight: normal;
+ }
+ 
+ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+   font-weight: inherit;
+ }
+ 
+ h1 {
+   font-size: 38px;
+   line-height: 42px;
+   margin-bottom: 12px;
+   letter-spacing: -1px;
+ }
+ 
+ h2 {
+   font-size: 28px;
+   line-height: 36px;
+   margin-bottom: 6px;
+ }
+ 
+ h3 {
+   font-size: 22px;
+   line-height: 30px;
+   margin-bottom: 12px;
+ }
+ 
+ h4 {
+   font-size: 20px;
+   line-height: 30px;
+   margin-bottom: 6px;
+ }
+ 
+ h5 {
+   font-size: 18px;
+   line-height: 30px;
+ }
+ 
+ h6 {
+   font-size: 14px;
+   line-height: 30px;
+ }
+ 
+ .subheader {}
+ 
+ p {
+   margin: 0 0 30px 0;
+ 
+   img {
+     margin: 0;
+   }
+ 
+   &.lead {
+     font: 19px/36px $font-type;
+     margin-bottom: 18px;
+   }
+ }
+ 
+ hr {
+   border: solid $underline;
+   border-width: 1px 0 0;
+   clear: both;
+   margin: 11px 0 30px;
+   height: 0;
+ }
+ 
+ a {
+   text-decoration: none;
+   outline: 0;
+   color: $links;
+   -webkit-transition: color .3s ease-in-out;
+   -moz-transition: color .3s ease-in-out;
+   -o-transition: color .3s ease-in-out;
+   transition: color .3s ease-in-out;
+ 
+   &:visited {
+     text-decoration: none;
+     outline: 0;
+     color: $links;
+     -webkit-transition: color .3s ease-in-out;
+     -moz-transition: color .3s ease-in-out;
+     -o-transition: color .3s ease-in-out;
+     transition: color .3s ease-in-out;
+   }
+ 
+   &:hover {
+     color: $accent-color;
+     -webkit-transition: color .3s ease-in-out;
+     -moz-transition: color .3s ease-in-out;
+     -o-transition: color .3s ease-in-out;
+     transition: color .3s ease-in-out;
+   }
+ }
+ 
+ p a {
+   line-height: inherit;
+ 
+   &:visited {
+     line-height: inherit;
+   }
+ }
+ 
+ .button {
+   font: 16px/30px $font-type;
+   background: $links;
+   display: inline-block;
+   text-decoration: none;
+   letter-spacing: 0;
+   color: $text-color;
+   padding: 12px 20px;
+   margin-bottom: 18px;
+   border: none;
+   cursor: pointer;
+   height: auto;
+   -webkit-transition: all .2s ease-in-out;
+   -moz-transition: all .2s ease-in-out;
+   -o-transition: all .2s ease-in-out;
+   -ms-transition: all .2s ease-in-out;
+   transition: all .2s ease-in-out;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   border-radius: 3px;
+ 
+   &:visited {
+     font: 16px/30px '$font-type';
+     background: $links;
+     display: inline-block;
+     text-decoration: none;
+     letter-spacing: 0;
+     color: $text-color;
+     padding: 12px 20px;
+     margin-bottom: 18px;
+     border: none;
+     cursor: pointer;
+     height: auto;
+     -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+     -ms-transition: all .2s ease-in-out;
+     transition: all .2s ease-in-out;
+     -moz-border-radius: 3px;
+     -webkit-border-radius: 3px;
+     -khtml-border-radius: 3px;
+     border-radius: 3px;
+   }
+ }
+ 
+ button {
+   font: 16px/30px $font-type;
+   background: $links;
+   display: inline-block;
+   text-decoration: none;
+   letter-spacing: 0;
+   color: $text-color;
+   padding: 12px 20px;
+   margin-bottom: 18px;
+   border: none;
+   cursor: pointer;
+   height: auto;
+   -webkit-transition: all .2s ease-in-out;
+   -moz-transition: all .2s ease-in-out;
+   -o-transition: all .2s ease-in-out;
+   -ms-transition: all .2s ease-in-out;
+   transition: all .2s ease-in-out;
+   -moz-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   border-radius: 3px;
+ }
+ 
+ input {
+   &[type="submit"], &[type="reset"], &[type="button"] {
+     font: 16px/30px $font-type;
+     background: $links;
+     display: inline-block;
+     text-decoration: none;
+     letter-spacing: 0;
+     color: $text-color;
+     padding: 12px 20px;
+     margin-bottom: 18px;
+     border: none;
+     cursor: pointer;
+     height: auto;
+     -webkit-transition: all .2s ease-in-out;
+     -moz-transition: all .2s ease-in-out;
+     -o-transition: all .2s ease-in-out;
+     -ms-transition: all .2s ease-in-out;
+     transition: all .2s ease-in-out;
+     -moz-border-radius: 3px;
+     -webkit-border-radius: 3px;
+     -khtml-border-radius: 3px;
+     border-radius: 3px;
+   }
+ }
+ 
+ .button:hover, button:hover {
+   background: $accent-color;
+   color: $text-color;
+ }
+ 
+ input {
+   &[type="submit"]:hover, &[type="reset"]:hover, &[type="button"]:hover {
+     background: $accent-color;
+     color: $text-color;
+   }
+ }
+ 
+ .button:active, button:active {
+   background: $accent-color;
+   color: $text-color;
+ }
+ 
+ input {
+   &[type="submit"]:active, &[type="reset"]:active, &[type="button"]:active {
+     background: $accent-color;
+     color: $text-color;
+   }
+ }
+ 
+ .button.full-width, button.full-width {
+   width: 100%;
+   padding-left: 0 !important;
+   padding-right: 0 !important;
+   text-align: center;
+ }
+ 
+ input {
+   &[type="submit"].full-width, &[type="reset"].full-width, &[type="button"].full-width {
+     width: 100%;
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+     text-align: center;
+   }
+ }
+ 
+ /* Fix for odd Mozilla border & padding issues */
+ 
+ button::-moz-focus-inner, input::-moz-focus-inner {
+   border: 0;
+   padding: 0;
+ }
+ 
+ .row {
+   width: 96%;
+   max-width: 1020px;
+   margin: 0 auto;
+ 
+   &:before {
+     content: " ";
+     display: table;
+   }
+ 
+   &:after {
+     content: " ";
+     display: table;
+     clear: both;
+   }
+ }
+ 
+ .column, .columns {
+   position: relative;
+   padding: 0 20px;
+   min-height: 1px;
+   float: left;
+   margin-top: 15px;
+ }
+ 
+ .column.centered, .columns.centered {
+   float: none;
+   margin: 0 auto;
+ }
+
+ @media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
+  
+  a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  
+  a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+a:hover img {
+  transform: scale(1.15);
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+div .skillsset {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;;
+}

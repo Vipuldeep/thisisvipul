@@ -1,0 +1,496 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body {
+  background: #272727;
+}
+
+header {
+  position: relative;
+  height: 800px;
+  min-height: 500px;
+  width: 100%;
+  background: #161415 no-repeat top center;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  text-align: center;
+  overflow: hidden;
+}
+
+header:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+header .banner {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 85%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+header .banner-text {
+  width: 100%;
+}
+
+header .banner-text h1 {
+  font: 90px/1.1em "Raleway", Montserrat;
+  color: #fff;
+  letter-spacing: -2px;
+  margin: 0 auto 18px auto;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+header .banner-text h3 {
+  font: 18px/1.9em "Raleway", Montserrat;
+  color: #A8A8A8;
+  margin: 0 auto;
+  width: 70%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header .banner-text h3 span, header .banner-text h3 a {
+  color: #fff;
+}
+
+header .banner-text hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #313131;
+  border-color: rgba(150, 150, 150, 0.1);
+}
+
+header .social {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 30px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+header .social li {
+  display: inline-block;
+  margin: 0 15px;
+  padding: 0;
+}
+
+header .social li a {
+  color: #fff;
+}
+
+header .social li a:hover {
+  color: #5f9ea0;
+}
+
+header .scrolldown a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+  transition: all .3s ease-in-out;
+}
+
+header .scrolldown a:hover {
+  color: #5f9ea0;
+}
+
+/* header social links */
+#nav-wrap {
+  font: 12px "Raleway", Montserrat;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.opaque {
+  background-color: #313131;
+}
+
+#nav-wrap {
+  font: 12px "Raleway", Montserrat;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+.opaque {
+  background-color: #333;
+}
+
+#nav-wrap > a.mobile-btn {
+  display: none;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+  text-align: center;
+  background-color: #272727;
+}
+
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 48px;
+  display: inline-block;
+}
+
+ul#nav li a {
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #5f9ea0;
+  transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active {
+  background-color: #5f9ea0 !important;
+}
+
+ul#nav li.current a {
+  color: #5f9ea0;
+}
+
+ul#nav li:hover a {
+  color: #5f9ea0;
+}
+
+ul#nav li a {
+  display: inline-block;
+  padding: 8px 13px;
+  line-height: 32px;
+  text-decoration: none;
+  text-align: left;
+  color: #fff;
+  transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active {
+  background-color: transparent !important;
+}
+
+ul#nav li.current a {
+  color: #5f9ea0;
+}
+
+#resume, #education, #skillset {
+  background: #fff;
+  padding-top: 90px;
+  padding-bottom: 72px;
+  overflow: hidden;
+}
+
+#resume a, #education a, #skillset a {
+  color: #5f9ea0;
+}
+
+#resume a:visited, #education a:visited, #skillset a:visited {
+  color: #5f9ea0;
+}
+
+#resume a:hover, #resume a:focus, #education a:hover, #education a:focus, #skillset a:hover, #skillset a:focus {
+  color: #313131;
+}
+
+#resume h1, #education h1, #skillset h1 {
+  font: 18px/24px "Raleway", Montserrat;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#resume h1 span, #education h1 span, #skillset h1 span {
+  border-bottom: 3px solid #5f9ea0;
+  padding-bottom: 6px;
+}
+
+#resume h3, #education h3, #skillset h3 {
+  font: 25px/30px "Raleway", Montserrat;
+}
+
+#resume .header-col, #education .header-col, #skillset .header-col {
+  padding-top: 9px;
+}
+
+#resume .main-col, #education .main-col, #skillset .main-col {
+  padding-right: 10%;
+}
+
+.education, .work {
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #fff;
+}
+
+#resume .info, #education .info, #skillset .info {
+  font: 16px/24px "Raleway", Montserrat;
+  color: #5f9ea0;
+  margin-bottom: 18px;
+  margin-top: 9px;
+}
+
+#resume .info span, #education .info span, #skillset .info span {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+#resume .date, #education .date, #skillset .date {
+  font: 15px/24px "Raleway", Montserrat;
+  margin-top: 6px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #272727;
+  /* Fallback color */
+  background-color: #272727;
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: #5f9ea0;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus {
+  color: #272727;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 14px 16px;
+  font-size: 20px;
+  font-style: "Raleway", Montserrat;
+  color: #272727;
+  text-transform: uppercase;
+  margin: 40px;
+}
+
+.modal-header hr {
+  width: 60%;
+  margin: 18px auto 24px auto;
+  border-color: #313131;
+  border-color: rgba(150, 150, 150, 0.1);
+}
+
+.modal-body {
+  padding: 2px 16px;
+  font-style: "Raleway", Montserrat;
+}
+
+/* Add Animation */
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bars {
+  width: 95%;
+  float: left;
+  padding: 0;
+  text-align: left;
+}
+
+.bars .skills {
+  margin-top: 36px;
+  list-style: none;
+}
+
+.bars li {
+  position: relative;
+  margin-bottom: 60px;
+  background: #fff;
+  height: 42px;
+  border-radius: 3px;
+}
+
+.bars li em {
+  font: 15px "Raleway", Montserrat;
+  color: #272727;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+  position: relative;
+  top: -36px;
+}
+
+.bar-expand {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding-right: 24px;
+  background: #272727;
+  display: inline-block;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 3px 0 0 3px;
+}
+
+.photoshop {
+  width: 60%;
+  -moz-animation: photoshop 2s ease;
+  -webkit-animation: photoshop 2s ease;
+}
+
+.illustrator {
+  width: 55%;
+  -moz-animation: illustrator 2s ease;
+  -webkit-animation: illustrator 2s ease;
+}
+
+.wordpress {
+  width: 50%;
+  -moz-animation: wordpress 2s ease;
+  -webkit-animation: wordpress 2s ease;
+}
+
+.css {
+  width: 90%;
+  -moz-animation: css 2s ease;
+  -webkit-animation: css 2s ease;
+}
+
+.html5 {
+  width: 80%;
+  -moz-animation: html5 2s ease;
+  -webkit-animation: html5 2s ease;
+}
+
+.jquery {
+  width: 50%;
+  -moz-animation: jquery 2s ease;
+  -webkit-animation: jquery 2s ease;
+}
+
+footer {
+  padding-top: 48px;
+  margin-bottom: 48px;
+  color: #5f9ea0;
+  font-size: 14px;
+  text-align: center;
+  position: relative;
+  background-color: #272727;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.copyright li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+  text-align: center;
+}
+
+.ie footer .copyright li {
+  display: inline;
+  text-align: center;
+}
+
+footer .copyright li:before {
+  content: "\2022";
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #272727;
+}
+
+footer .copyright li:first-child:before {
+  display: none;
+}
+/*# sourceMappingURL=layout.css.map */

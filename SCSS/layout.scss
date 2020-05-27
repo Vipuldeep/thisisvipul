@@ -1,0 +1,667 @@
+@import './resets';
+@import './variables';
+
+body {
+   background: $primary-color;
+ }
+ 
+ header {
+   position: relative;
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   background: #161415 no-repeat top center;
+   background-size: cover !important;
+   -webkit-background-size: cover !important;
+   text-align: center;
+   overflow: hidden;
+ 
+   &:before {
+     content: '';
+     display: inline-block;
+     vertical-align: middle;
+     height: 100%;
+   }
+ 
+   .banner {
+     display: inline-block;
+     vertical-align: middle;
+     margin: 0 auto;
+     width: 85%;
+     padding-bottom: 30px;
+     text-align: center;
+   }
+ 
+   .banner-text {
+     width: 100%;
+ 
+     h1 {
+       font: 90px/1.1em $font-type;
+       color: #fff;
+       letter-spacing: -2px;
+       margin: 0 auto 18px auto;
+       text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+     }
+ 
+     h3 {
+       font: 18px/1.9em $font-type;
+       color: #A8A8A8;
+       margin: 0 auto;
+       width: 70%;
+       text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+ 
+       span, a {
+         color: $text-color;
+       }
+     }
+ 
+     hr {
+       width: 60%;
+       margin: 18px auto 24px auto;
+       border-color: $accent-color;
+       border-color: rgba(150, 150, 150, 0.1);
+     }
+   }
+ 
+   .social {
+     margin: 24px 0;
+     padding: 0;
+     font-size: 30px;
+     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+ 
+     li {
+       display: inline-block;
+       margin: 0 15px;
+       padding: 0;
+ 
+       a {
+         color: $text-color;
+ 
+         &:hover {
+           color: $nav-color;
+         }
+       }
+     }
+   }
+ 
+   .scrolldown a {
+     position: absolute;
+     bottom: 30px;
+     left: 50%;
+     margin-left: -29px;
+     color: $text-color;
+     display: block;
+     height: 42px;
+     width: 42px;
+     font-size: 42px;
+     line-height: 42px;
+     color: $text-color;
+     border-radius: 100%;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+ 
+     &:hover {
+       color: $nav-color;
+     }
+   }
+ }
+ 
+ /* header social links */
+ 
+ #nav-wrap {
+   ul, li, a {
+     margin: 0;
+     padding: 0;
+     border: none;
+     outline: none;
+   }
+ 
+   font: 12px $font-type;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+ }
+ 
+ .opaque {
+   background-color: $accent-color;
+ }
+
+
+
+#nav-wrap {
+  ul, li, a {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+  }
+
+  font: 12px $font-type;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.opaque {
+  background-color: #333;
+}
+
+#nav-wrap > a.mobile-btn {
+  display: none;
+}
+
+ul#nav {
+  min-height: 48px;
+  width: auto;
+  text-align: center;
+  background-color: $primary-color;
+
+  li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+
+    a {
+      display: inline-block;
+      padding: 8px 13px;
+      line-height: 32px;
+      text-decoration: none;
+      text-align: left;
+      color: $nav-color;
+      -webkit-transition: color .2s ease-in-out;
+      -moz-transition: color .2s ease-in-out;
+      -o-transition: color .2s ease-in-out;
+      -ms-transition: color .2s ease-in-out;
+      transition: color .2s ease-in-out;
+
+      &:active {
+        background-color: $nav-color !important;
+      }
+    }
+
+    &.current a {
+      color: $nav-color
+    }
+    
+    &:hover a {
+      color: $nav-color
+    }
+  }
+}
+
+ul#nav li {
+  a {
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: $text-color;
+    -webkit-transition: color .2s ease-in-out;
+    -moz-transition: color .2s ease-in-out;
+    -o-transition: color .2s ease-in-out;
+    -ms-transition: color .2s ease-in-out;
+    transition: color .2s ease-in-out;
+
+    &:active {
+      background-color: transparent !important;
+    }
+  }
+
+  &.current a {
+    color: $nav-color;
+  }
+}
+ 
+ #resume, #education, #skillset{
+   background: $text-color;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+ 
+   a {
+     color: $nav-color;
+ 
+     &:visited {
+       color: $nav-color;
+     }
+ 
+     &:hover, &:focus {
+       color: $accent-color;
+     }
+   }
+ 
+   h1 {
+     font: 18px/24px $font-type;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+ 
+     span {
+       border-bottom: 3px solid $nav-color;
+       padding-bottom: 6px;
+     }
+   }
+ 
+   h3 {
+     font: 25px/30px $font-type;
+   }
+ 
+   .header-col {
+     padding-top: 9px;
+   }
+ 
+   .main-col {
+     padding-right: 10%;
+   }
+ }
+ 
+ .education, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid $text-color;
+ }
+ 
+ #resume, #education, #skillset {
+   .info {
+     font: 16px/24px $font-type;
+     color: $nav-color;
+     margin-bottom: 18px;
+     margin-top: 9px;
+ 
+     span {
+       margin-right: 5px;
+       margin-left: 5px;
+     }
+   }
+ 
+   .date {
+     font: 15px/24px $font-type;
+     margin-top: 6px;
+   }
+ }
+ 
+/* The Modal (background) */
+.modal {
+  display: none;
+
+  /* Hidden by default */
+  position: fixed;
+
+  /* Stay in place */
+  z-index: 1;
+
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  /* Full width */
+  height: 100%;
+
+  /* Full height */
+  overflow: auto;
+
+  /* Enable scroll if needed */
+  background-color: $primary-color;
+
+  /* Fallback color */
+  background-color: $primary-color;
+
+  /* Black w/ opacity */
+  -webkit-animation-name: fadeIn;
+
+  /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: $text-color;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
+
+/* The Close Button */
+.close {
+  color: $nav-color;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+
+  &:hover, &:focus {
+    color: $primary-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.modal-header {
+  padding: 14px 16px;
+  font-size: 20px;
+  font-style: $font-type;
+  color: $primary-color;
+  text-transform: uppercase;
+  margin: 40px;
+  hr {
+    width: 60%;
+    margin: 18px auto 24px auto;
+    border-color: $accent-color;
+    border-color: rgba(150, 150, 150, 0.1);
+  }
+}
+
+.modal-body {
+  padding: 2px 16px;
+  font-style: $font-type;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+ .bars {
+   width: 95%;
+   float: left;
+   padding: 0;
+   text-align: left;
+ 
+   .skills {
+     margin-top: 36px;
+     list-style: none;
+   }
+ 
+   li {
+     position: relative;
+     margin-bottom: 60px;
+     background: $text-color;
+     height: 42px;
+     border-radius: 3px;
+ 
+     em {
+       font: 15px $font-type;
+       color: $primary-color;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       font-weight: normal;
+       position: relative;
+       top: -36px;
+     }
+   }
+ }
+ 
+ .bar-expand {
+   position: absolute;
+   left: 0;
+   top: 0;
+   margin: 0;
+   padding-right: 24px;
+   background: $primary-color;
+   display: inline-block;
+   height: 42px;
+   line-height: 42px;
+   border-radius: 3px 0 0 3px;
+ }
+ 
+ .photoshop {
+   width: 60%;
+   -moz-animation: photoshop 2s ease;
+   -webkit-animation: photoshop 2s ease;
+ }
+ 
+ .illustrator {
+   width: 55%;
+   -moz-animation: illustrator 2s ease;
+   -webkit-animation: illustrator 2s ease;
+ }
+ 
+ .wordpress {
+   width: 50%;
+   -moz-animation: wordpress 2s ease;
+   -webkit-animation: wordpress 2s ease;
+ }
+ 
+ .css {
+   width: 90%;
+   -moz-animation: css 2s ease;
+   -webkit-animation: css 2s ease;
+ }
+ 
+ .html5 {
+   width: 80%;
+   -moz-animation: html5 2s ease;
+   -webkit-animation: html5 2s ease;
+ }
+ 
+ .jquery {
+   width: 50%;
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
+ }
+ 
+ @-moz-keyframes photoshop {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 60%;
+   }
+ }
+ 
+ @-moz-keyframes illustrator {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 55%;
+   }
+ }
+ 
+ @-moz-keyframes wordpress {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 50%;
+   }
+ }
+ 
+ @-moz-keyframes css {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 90%;
+   }
+ }
+ 
+ @-moz-keyframes html5 {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 80%;
+   }
+ }
+ 
+ @-moz-keyframes jquery {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 50%;
+   }
+ }
+ 
+ @-webkit-keyframes photoshop {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 60%;
+   }
+ }
+ 
+ @-webkit-keyframes illustrator {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 55%;
+   }
+ }
+ 
+ @-webkit-keyframes wordpress {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 50%;
+   }
+ }
+ 
+ @-webkit-keyframes css {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 90%;
+   }
+ }
+ 
+ @-webkit-keyframes html5 {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 80%;
+   }
+ }
+ 
+ @-webkit-keyframes jquery {
+   0% {
+     width: 0px;
+   }
+ 
+   100% {
+     width: 50%;
+   }
+ }
+ 
+ footer {
+   padding-top: 48px;
+   margin-bottom: 48px;
+   color: $nav-color;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+   background-color: $primary-color
+   }
+ 
+   .copyright {
+     margin: 0;
+     padding: 0;
+     
+ 
+     li {
+       display: inline-block;
+       margin: 0;
+       padding: 0;
+       line-height: 24px;
+       text-align: center;
+     }
+   }
+ 
+ 
+ .ie footer .copyright li {
+   display: inline;
+   text-align: center;
+ }
+ 
+ footer .copyright li {
+   &:before {
+     content: "\2022";
+     padding-left: 10px;
+     padding-right: 10px;
+     color: $primary-color;
+   }
+ 
+   &:first-child:before {
+     display: none;
+   }
+ }
+
+ 

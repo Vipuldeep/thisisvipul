@@ -1,0 +1,290 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Raleway", Montserrat;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  color: #272727;
+  -webkit-font-smoothing: antialiased;
+  /* Fix for webkit rendering */
+  -webkit-text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #313131;
+  font-family: "Raleway", Montserrat;
+  font-weight: normal;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 42px;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 6px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 30px;
+  margin-bottom: 12px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 6px;
+}
+
+h5 {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h6 {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+p {
+  margin: 0 0 30px 0;
+}
+
+p img {
+  margin: 0;
+}
+
+p.lead {
+  font: 19px/36px "Raleway", Montserrat;
+  margin-bottom: 18px;
+}
+
+hr {
+  border: solid #E3E3E3;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 11px 0 30px;
+  height: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+  color: #11ABB0;
+  transition: color .3s ease-in-out;
+}
+
+a:visited {
+  text-decoration: none;
+  outline: 0;
+  color: #11ABB0;
+  transition: color .3s ease-in-out;
+}
+
+a:hover {
+  color: #313131;
+  transition: color .3s ease-in-out;
+}
+
+p a {
+  line-height: inherit;
+}
+
+p a:visited {
+  line-height: inherit;
+}
+
+.button {
+  font: 16px/30px "Raleway", Montserrat;
+  background: #11ABB0;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  transition: all .2s ease-in-out;
+  border-radius: 3px;
+}
+
+.button:visited {
+  font: 16px/30px '$font-type';
+  background: #11ABB0;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  transition: all .2s ease-in-out;
+  border-radius: 3px;
+}
+
+button {
+  font: 16px/30px "Raleway", Montserrat;
+  background: #11ABB0;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  transition: all .2s ease-in-out;
+  border-radius: 3px;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"] {
+  font: 16px/30px "Raleway", Montserrat;
+  background: #11ABB0;
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 18px;
+  border: none;
+  cursor: pointer;
+  height: auto;
+  transition: all .2s ease-in-out;
+  border-radius: 3px;
+}
+
+.button:hover, button:hover {
+  background: #313131;
+  color: #fff;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+  background: #313131;
+  color: #fff;
+}
+
+.button:active, button:active {
+  background: #313131;
+  color: #fff;
+}
+
+input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active {
+  background: #313131;
+  color: #fff;
+}
+
+.button.full-width, button.full-width {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+
+input[type="submit"].full-width, input[type="reset"].full-width, input[type="button"].full-width {
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+}
+
+/* Fix for odd Mozilla border & padding issues */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.row {
+  width: 96%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.row:before {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.column, .columns {
+  position: relative;
+  padding: 0 20px;
+  min-height: 1px;
+  float: left;
+  margin-top: 15px;
+}
+
+.column.centered, .columns.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 50em) {
+  a {
+    width: calc(25% - 6px);
+  }
+  a:nth-of-type(2n) {
+    margin-right: 8px;
+  }
+  a:nth-of-type(4n) {
+    margin-right: 0;
+  }
+}
+
+a:hover img {
+  transform: scale(1.15);
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+figcaption {
+  margin-top: 15px;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  background: #ccc;
+  transition: transform .2s ease-in-out;
+}
+
+div .skillsset {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=default.css.map */

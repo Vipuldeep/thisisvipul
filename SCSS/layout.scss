@@ -341,6 +341,7 @@ ul#nav li {
   -webkit-animation-duration: 0.4s;
   animation-name: slideIn;
   animation-duration: 0.4s;
+  overflow-y: scroll; max-height:85%;  margin-top: 100px; margin-bottom: 50px;
 }
 
 /* The Close Button */
@@ -358,11 +359,12 @@ ul#nav li {
 }
 
 .modal-header {
-  padding: 14px 16px;
+  padding: 0px 16px;
   font-size: 20px;
   font-style: $font-type;
   color: $primary-color;
   text-transform: uppercase;
+  display: block !important;
   margin: 40px;
   hr {
     width: 60%;

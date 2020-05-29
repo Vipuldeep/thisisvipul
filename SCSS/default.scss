@@ -131,6 +131,8 @@ html {
    color: $text-color;
    padding: 12px 20px;
    margin-bottom: 18px;
+   text-align: center;
+   width: 100% !important;
    border: none;
    cursor: pointer;
    height: auto;
@@ -178,6 +180,7 @@ html {
    padding: 12px 20px;
    margin-bottom: 18px;
    border: none;
+   width: 100%;
    cursor: pointer;
    height: auto;
    -webkit-transition: all .2s ease-in-out;

@@ -72,6 +72,8 @@ p {
 
 p img {
   margin: 0;
+  width: 300px;
+  height: 270px;
 }
 
 p.lead {
@@ -240,10 +242,11 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .column, .columns {
   position: relative;
-  padding: 0 20px;
+  padding: 0 14px;
   min-height: 1px;
   float: left;
   margin-top: 15px;
+  margin-left: 4px;
 }
 
 .column.centered, .columns.centered {

@@ -215,8 +215,7 @@ ul#nav li.current a {
 
 #resume, #education, #skillset {
   background: #fff;
-  padding-top: 90px;
-  padding-bottom: 72px;
+  padding-top: 50px;
   overflow: hidden;
 }
 
@@ -257,7 +256,6 @@ ul#nav li.current a {
 
 .education, .work {
   margin-bottom: 48px;
-  padding-bottom: 24px;
   border-bottom: 1px solid #fff;
 }
 
@@ -379,85 +377,6 @@ ul#nav li.current a {
   to {
     opacity: 1;
   }
-}
-
-.bars {
-  width: 95%;
-  float: left;
-  padding: 0;
-  text-align: left;
-}
-
-.bars .skills {
-  margin-top: 36px;
-  list-style: none;
-}
-
-.bars li {
-  position: relative;
-  margin-bottom: 60px;
-  background: #fff;
-  height: 42px;
-  border-radius: 3px;
-}
-
-.bars li em {
-  font: 15px "Raleway", Montserrat;
-  color: #272727;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: normal;
-  position: relative;
-  top: -36px;
-}
-
-.bar-expand {
-  position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
-  padding-right: 24px;
-  background: #272727;
-  display: inline-block;
-  height: 42px;
-  line-height: 42px;
-  border-radius: 3px 0 0 3px;
-}
-
-.photoshop {
-  width: 60%;
-  -moz-animation: photoshop 2s ease;
-  -webkit-animation: photoshop 2s ease;
-}
-
-.illustrator {
-  width: 55%;
-  -moz-animation: illustrator 2s ease;
-  -webkit-animation: illustrator 2s ease;
-}
-
-.wordpress {
-  width: 50%;
-  -moz-animation: wordpress 2s ease;
-  -webkit-animation: wordpress 2s ease;
-}
-
-.css {
-  width: 90%;
-  -moz-animation: css 2s ease;
-  -webkit-animation: css 2s ease;
-}
-
-.html5 {
-  width: 80%;
-  -moz-animation: html5 2s ease;
-  -webkit-animation: html5 2s ease;
-}
-
-.jquery {
-  width: 50%;
-  -moz-animation: jquery 2s ease;
-  -webkit-animation: jquery 2s ease;
 }
 
 footer {

@@ -226,7 +226,7 @@ ul#nav li {
   }
 }
  
- #resume, #education, #skillset{
+ #resume, #education, #skillset, #projects{
    background: $text-color;
    padding-top: 50px;
   //  padding-bottom: 72px;
@@ -467,51 +467,54 @@ ul#nav li {
    }
  }
 
- small {
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
+ .thecolumns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
 }
 
-/* Styles you want to copy across begin here */
-
-.testimonials {
-  background-color: #e8e8e5;
-  overflow: hidden;
-  width: 100%;
-}
-
-.testimonials ul {
-  list-style: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.theprice {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
   padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-.testimonials ul li {
-  display: inline-block;
-  padding: 1rem;
-  position: relative;
+.theprice:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.theprice .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.theprice li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
   text-align: center;
-  width: 100vw;
 }
 
-.testimonials ul li p {
-  max-width: 600px;
-  margin: 1rem auto;
-  width: 50%;
+.theprice .grey {
+  background-color: #eee;
+  font-size: 20px;
 }
 
-.testimonials-control {
-  background-color: rgba(255,255,255,0.2);
-  display: flex;
-  justify-content: center;
-}
+// .button {
+//   background-color: #4CAF50;
+//   border: none;
+//   color: white;
+//   padding: 10px 25px;
+//   text-align: center;
+//   text-decoration: none;
+//   font-size: 18px;
+// }
 
-.testimonials-control i {
-  cursor: pointer;
-  padding: 1.3rem;
-}
+@media only screen and (max-width: 600px) {
+  .thecolumns {
+    width: 100%;
+  }
+} 

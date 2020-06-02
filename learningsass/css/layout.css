@@ -213,44 +213,44 @@ ul#nav li.current a {
   color: #5f9ea0;
 }
 
-#resume, #education, #skillset {
+#resume, #education, #skillset, #projects {
   background: #fff;
   padding-top: 50px;
   overflow: hidden;
 }
 
-#resume a, #education a, #skillset a {
+#resume a, #education a, #skillset a, #projects a {
   color: #5f9ea0;
 }
 
-#resume a:visited, #education a:visited, #skillset a:visited {
+#resume a:visited, #education a:visited, #skillset a:visited, #projects a:visited {
   color: #5f9ea0;
 }
 
-#resume a:hover, #resume a:focus, #education a:hover, #education a:focus, #skillset a:hover, #skillset a:focus {
+#resume a:hover, #resume a:focus, #education a:hover, #education a:focus, #skillset a:hover, #skillset a:focus, #projects a:hover, #projects a:focus {
   color: #313131;
 }
 
-#resume h1, #education h1, #skillset h1 {
+#resume h1, #education h1, #skillset h1, #projects h1 {
   font: 18px/24px "Raleway", Montserrat;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-#resume h1 span, #education h1 span, #skillset h1 span {
+#resume h1 span, #education h1 span, #skillset h1 span, #projects h1 span {
   border-bottom: 3px solid #5f9ea0;
   padding-bottom: 6px;
 }
 
-#resume h3, #education h3, #skillset h3 {
+#resume h3, #education h3, #skillset h3, #projects h3 {
   font: 25px/30px "Raleway", Montserrat;
 }
 
-#resume .header-col, #education .header-col, #skillset .header-col {
+#resume .header-col, #education .header-col, #skillset .header-col, #projects .header-col {
   padding-top: 9px;
 }
 
-#resume .main-col, #education .main-col, #skillset .main-col {
+#resume .main-col, #education .main-col, #skillset .main-col, #projects .main-col {
   padding-right: 10%;
 }
 
@@ -418,51 +418,44 @@ footer .copyright li:first-child:before {
   display: none;
 }
 
-small {
-  font-family: 'Montserrat', 'Helvetica', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-transform: uppercase;
+.thecolumns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
 }
 
-/* Styles you want to copy across begin here */
-.testimonials {
-  background-color: #e8e8e5;
-  overflow: hidden;
-  width: 100%;
-}
-
-.testimonials ul {
-  list-style: none;
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.theprice {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
   padding: 0;
+  transition: 0.3s;
 }
 
-.testimonials ul li {
-  display: inline-block;
-  padding: 1rem;
-  position: relative;
+.theprice:hover {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.theprice .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.theprice li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
   text-align: center;
-  width: 100vw;
 }
 
-.testimonials ul li p {
-  max-width: 600px;
-  margin: 1rem auto;
-  width: 50%;
+.theprice .grey {
+  background-color: #eee;
+  font-size: 20px;
 }
 
-.testimonials-control {
-  background-color: rgba(255, 255, 255, 0.2);
-  display: flex;
-  justify-content: center;
-}
-
-.testimonials-control i {
-  cursor: pointer;
-  padding: 1.3rem;
+@media only screen and (max-width: 600px) {
+  .thecolumns {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=layout.css.map */

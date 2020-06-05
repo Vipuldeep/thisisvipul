@@ -234,14 +234,15 @@ ul#nav li {
  
    a {
      color: $nav-color;
+     padding: 10px;
  
      &:visited {
        color: $nav-color;
      }
  
-     &:hover, &:focus {
-       color: $accent-color;
-     }
+    //  &:hover, &:focus {
+    //    color: $accent-color;
+    //  }
    }
  
    h1 {
@@ -480,27 +481,27 @@ ul#nav li {
   padding: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-}
 
-.theprice:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
+  &:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+  }
 
-.theprice .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
-}
+  .header {
+    background-color: $primary-color;
+    color: $text-color;
+    font-size: 20px;
+  }
 
-.theprice li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
-}
+  li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+  }
 
-.theprice .grey {
-  background-color: #eee;
-  font-size: 20px;
+  .grey {
+    background-color: $underline;
+    font-size: 15px;
+  }
 }
 
 // .button {
@@ -517,4 +518,4 @@ ul#nav li {
   .thecolumns {
     width: 100%;
   }
-} 
+}

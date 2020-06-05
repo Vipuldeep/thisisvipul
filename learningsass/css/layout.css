@@ -221,14 +221,11 @@ ul#nav li.current a {
 
 #resume a, #education a, #skillset a, #projects a {
   color: #5f9ea0;
+  padding: 10px;
 }
 
 #resume a:visited, #education a:visited, #skillset a:visited, #projects a:visited {
   color: #5f9ea0;
-}
-
-#resume a:hover, #resume a:focus, #education a:hover, #education a:focus, #skillset a:hover, #skillset a:focus, #projects a:hover, #projects a:focus {
-  color: #313131;
 }
 
 #resume h1, #education h1, #skillset h1, #projects h1 {
@@ -437,9 +434,9 @@ footer .copyright li:first-child:before {
 }
 
 .theprice .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
+  background-color: #272727;
+  color: #fff;
+  font-size: 20px;
 }
 
 .theprice li {
@@ -449,8 +446,8 @@ footer .copyright li:first-child:before {
 }
 
 .theprice .grey {
-  background-color: #eee;
-  font-size: 20px;
+  background-color: #E3E3E3;
+  font-size: 15px;
 }
 
 @media only screen and (max-width: 600px) {

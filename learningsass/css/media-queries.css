@@ -115,6 +115,9 @@
     line-height: 16px;
     border: none;
   }
+  header {
+    height: 1000px;
+  }
   header .banner {
     padding-bottom: 12px;
     padding-top: 6px;
@@ -170,7 +173,7 @@
     float: none;
   }
   header {
-    height: 800px;
+    height: 1000px;
   }
   header .banner {
     padding-top: 24px;

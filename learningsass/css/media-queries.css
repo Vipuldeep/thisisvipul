@@ -169,6 +169,9 @@
     width: auto;
     float: none;
   }
+  header {
+    height: 800px;
+  }
   header .banner {
     padding-top: 24px;
   }

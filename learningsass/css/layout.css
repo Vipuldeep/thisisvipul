@@ -455,4 +455,9 @@ footer .copyright li:first-child:before {
     width: 100%;
   }
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /*# sourceMappingURL=layout.css.map */

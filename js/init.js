@@ -19,7 +19,9 @@ jQuery(document).ready(function($) {
 			}, 800, 'swing', function () {
 				window.location.hash = target;
 			});
-		});	
+		});
+	
+	
 
 	// 	var sections = $("section");
 	// 	var navigation_links = $("#nav-wrap a");
